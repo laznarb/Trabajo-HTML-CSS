@@ -1,0 +1,131 @@
+body{
+    background-image: url(imagenes/fondo.jpg);
+}
+section{
+    display: flex;
+    flex-direction: column;
+}
+header img{
+width: 10%;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu {
+border: 1px solid mediumpurple;
+background-color: mediumturquoise;
+text-align: center;
+box-shadow: 2px 2px 5px black;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    border: 3px double;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 2px 2px 5px mediumpurple;
+}
+.menu ul{
+    list-style: none;
+    padding-left: 0px;
+}
+h3{
+    color: white;
+    text-shadow: 2px 2px 5px mediumpurple;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a:hover{
+    color: mediumpurple;
+}
+h1 {
+    color:mediumpurple;
+    background-color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+table th{
+    background-color: mediumturquoise;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+table{
+    background-color: mediumpurple;
+    border: 3px;
+    box-shadow: 2px 2px 5px black;
+}
+table td{
+    background-color: mediumturquoise;
+    color: white;
+}
+table td a{
+    color: white;
+    text-decoration: none;
+}
+table td a:hover{
+    color: mediumpurple;
+}
+div article{
+    border: 1px solid;
+    text-align: center;
+    width:350px;
+    height: 500px;
+    margin: 30px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: lightgoldenrodyellow;
+    box-shadow: 2px 2px 5px black;
+}
+div article:hover{
+    transform: scale(1.1);
+}
+h2{
+    color: mediumpurple;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+article a {
+    color: black;
+    text-decoration: none;
+}
+article .boton{
+    background-color: mediumturquoise;
+}
+article img{
+    width: 100%;
+}
+footer{
+    background-color: mediumpurple;
+    box-shadow: 2px 2px 5px black;
+}
+footer a{
+    color: black;
+    text-decoration: none;
+}
+footer a:hover{
+    color: mediumturquoise;
+}
+nav{ grid-area: n;}
+table{ grid-area: t;}
+section{ grid-area: s;}
+header{ grid-area: h;}
+footer{ grid-area: f;}
+
+main{
+    display: grid;
+    grid-template-areas: 
+    "h h h h h"
+    "n t t t t"
+    "n s s s s"
+    "n f f f f";
+}
+@media screen and (max-width: 1000px){
+    main{
+        grid-template-areas: 
+        "h h h h"
+        "n n n n"
+        "t t t t"
+        "s s s s"
+        "f f f f";
+}
+}
